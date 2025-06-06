@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <title>OM portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- -----------------Header------------------------- -->
+  <div id="header">
+    <div class="container">
+    <nav>
+      <div id="logo"><span>O</span>M</div>
+
+      <div id="menu-btn" class="nav-btn">&#9776;</div>
+
+      <ul id="nav-list">
+        <li id="close-btn">&times;</li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project-section">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+
+      <div class="header-content">
+        <div class="header-text">
+          <p>mern stack developer</p>
+          <h1>hi, I'm <span>Om</span><br>Kashyap From India</h1>
+        </div>
+        <div class="header-img">
+          <img src="images/black2img.png" alt="Profile Image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------About -------------------------------- -->
+ <div id="about">
+  <div class="container">
+    <h1 class="sub-title">About Me</h1>
+    <div class="about-content">
+      <div class="about-img">
+        <img src="images/user.png" alt="User Image">
+      </div>
+      <div class="about-details">
+        <p>I'm Om, a BTech student at DTU and a passionate web developer focused on mastering full-stack development with the MERN stack, while also strengthening my skills in Data Structures and Algorithms to build impactful and efficient digital solutions.</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>MERN Stack Web Developer</span><br>Builds responsive and dynamic web applications</li>
+            <li><span>Data Structures and Algorithms</span><br>Enhances the performance and efficiency of dynamic, responsive web applications</li>
+            <li><span>Programming Languages</span><br>Proficient in Java, JavaScript, and C</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Web Development Projects</span><br>Developed multiple projects using the MERN stack, focusing on responsive and dynamic user interfaces</li>
+            <li><span>DSA Practice</span><br>Solved 250+ problems on platforms like LeetCode to strengthen algorithmic thinking</li>
+            <li><span>Academic Experience</span><br>Completed coursework in Operating Systems, DBMS, and Computer Networks with hands-on lab assignments</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>B.Tech in Computer Science</span><br>Delhi Technological University, 2023 – 2027 , CGPA - 7.7 (till 3rd sem)</li>
+            <li><span>Senior Secondary (Class XII)</span><br>CBSE Board, PCMB – 88%, Passed in 2022</li>
+            <li><span>Secondary (Class X)</span><br>CBSE Board – 86%, Passed in 2020</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ----------------project------------------------------------ -->
+  <div class="project-section" id="project-section">
+    <div class="container">
+      <h2 class="sub-title">My Projects</h2>
+      <div class="filter-buttons">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="web">Web</button>
+        <button class="btn" data-filter="other">Other</button>
+      </div>
+      <div class="project-grid" id="project-grid"></div>
+    </div>
+    <div class="modal" id="project-modal">
+      <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="Project Image">
+        <p id="modal-description"></p>
+        <p id="modal-details"></p>
+        <a id="live-link" href="#" target="_blank">Live Site</a> |
+        <a id="source-link" href="#" target="_blank">Source Code</a>
+      </div>
+    </div>
+  </div>
+<!-- -------------contact------------------------ -->
+  <div id="contact">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" onsubmit="setTimeout(() => this.reset(), 10)">
+      <div class="contact-left-title">
+        <h2>Get in touch </h2>
+        <hr>
+      </div>
+      <input type="hidden" name="access_key" value="121be175-478c-44c9-aa6d-88f2989b4071">
+      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+      <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+      <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+      <button type="submit">Submit <img src="images/arrowicon.svg" alt="arrowicon"></button>
+    </form>
+    <div class="contact-right">
+      <img src="images/right_img.png" alt="">
+    </div>
+  </div>
+<!-- ------------------------footer -------------- -->
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://leetcode.com/u/ODcode/" target="_blank"><img src="images/leetcode.png" alt="LeetCode"></a>
+        <a href="https://github.com/OmKashyap8585" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+        <a href="https://www.instagram.com/__kashyap.om__/" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/om-kashyap-997236318" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <div class="resume-download">
+        <a href="" download><button>Download Resume</button></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
