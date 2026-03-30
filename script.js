@@ -2,131 +2,41 @@
 const projects = [
   
   {
-    image: "projectimages/p2.png",
-    category: "JavaScript",
-    "title": "Stopwatch",
-  "description": "Simple digital stopwatch",
-  "fullDescription": "This project is built using HTML, CSS, and JavaScript. It provides a responsive digital stopwatch interface with start, stop, and reset functionality, styled with interactive buttons and a clear timer display.",
-    liveLink: "https://example.com/blog",
-    sourceCode:"https://github.com/OmKashyap8585/JavaScript-basic-Projects/tree/27ded5bea86c6d0d49d575facaba32c026c2a10b/P_02_stopWatch"
+    image: "projectimages/auth.png",
+    category: "Mern",
+    "title": "Authentication System",
+    "description": "A production-grade authentication and authorization system built using MongoDB, Express, React, Node.js, Redis with secure session handling, role-based access control, and multiple authentication flows. Designed with a strong focus on security, scalability, and real-world authentication patterns.",
+    "fullDescription": "A production-grade authentication and authorization system built using MongoDB, Express, React, Node.js, Redis with secure session handling, role-based access control, and multiple authentication flows. Designed with a strong focus on security, scalability, and real-world authentication patterns.",
+    sourceCode:"https://github.com/OmKashyapODCode/Authentication",
+    liveLink: "https://authentication-odcode.onrender.com/"
   },
   {
-    image: "projectimages/p3.png",
-    category: "JavaScript",
-    "title": "QR Code Generator",
-  "description": "Generate and download QR codes",
-  "fullDescription": "This project is built using HTML, CSS, and JavaScript with the QRCode.js library. It allows users to enter text or URLs, choose a size, and generate a corresponding QR code that can be downloaded as an image.",
-    liveLink: "https://example.com/dsa-visualizer",
-    sourceCode: "https://github.com/OmKashyap8585/JavaScript-basic-Projects/tree/27ded5bea86c6d0d49d575facaba32c026c2a10b/P_03_QRgenerator"
-  },
-  {
-    image: "projectimages/p4.png",
-    category: "JavaScript",
-    "title": "Drag and Drop File Uploader",
-  "description": "Upload files using drag and drop",
-  "fullDescription": "This project is built using HTML, CSS, and JavaScript. It provides a user-friendly interface to upload files by dragging and dropping them into a designated area. It features real-time visual feedback and supports multiple file uploads.",
-    liveLink: "https://example.com/dsa-visualizer",
-    sourceCode: "https://github.com/OmKashyap8585/JavaScript-basic-Projects/tree/27ded5bea86c6d0d49d575facaba32c026c2a10b/file-uploader"
-  },
- // //======================== reactbasic========================
- {
-  "image": "projectimages/r1.png",
-  "category": "React",
-  "title": "Increment and Decrement Counter",
-  "description": "A simple counter app using React",
-  "fullDescription": "This project is built using React.js. It features a clean UI with buttons to increment and decrement a numeric value. The state is managed using React hooks, and it demonstrates the basics of component rendering and interaction.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
+  "image": "projectimages/bank.png",
+  "category": "Java",
+  "title": "Banking Management System (Java + JDBC)",
+  "description": "A console-based Banking Management System built using Java and JDBC that performs essential banking operations with persistent storage using MySQL.",
+  "fullDescription": "About\nBanking Management System is a Java-based console application using JDBC and MySQL that enables user registration, account management, balance checks, and basic banking transactions like deposits, withdrawals, and transfers, demonstrating core backend and database concepts.\n\nFeatures\nUser Registration & Login\nBank Account Creation\nView Account Balance\nDeposit Money\nWithdraw Money\nTransfer Funds Between Accounts\nSecure database interaction using JDBC\nModular and object-oriented design\n\n🛠️ Tech Stack\nLanguage: Java (JDK 8+)\nDatabase: MySQL\nConnectivity: JDBC\nIDE: IntelliJ IDEA / Eclipse / VS Code\nArchitecture: Console-based, OOP-driven",
+  "sourceCode": "https://github.com/OmKashyapODCode/Banking-management-System",
+  "liveLink": ""
 },
- {
-  "image": "projectimages/r2.png",
-  "category": "React",
-   "title": "Love Tour App",
-  "description": "Tour listing app with interest toggle",
-  "fullDescription": "This project is built using React.js. It displays a list of tours with details and allows users to remove tours they are not interested in. The app demonstrates dynamic rendering, component state management, and conditional UI updates using React hooks.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
-},
- {
-  "image": "projectimages/r3.png",
-  "category": "React",
-  "title": "Testimonials App",
-  "description": "Random testimonials with 'Surprise Me' feature",
-  "fullDescription": "This project is built using React.js. It showcases user testimonials with navigation controls and a 'Surprise Me' button that displays a random testimonial. It uses component-based structure and React hooks for state and logic.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
-},
- {
-  "image": "projectimages/r4.png",
-  "category": "React",
-  "title": "Form App",
-  "description": "Collects user info and creates an object",
-  "fullDescription": "This project is built using React.js. It features a dynamic form that collects user input such as name, email, and age, and generates a structured JavaScript object. It demonstrates form handling, controlled components, and state management using React hooks.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
-},
- {
-  "image": "projectimages/r5.png",
-  "category": "React",
-  "title": "Study Notion",
-  "description": "Educational platform to learn React Router",
-  "fullDescription": "This project is built using React.js and Tailwind CSS to understand the concept of React Router. It features a login and signup form, followed by a protected dashboard route. It uses modern React practices along with dependencies like react-router-dom, react-hot-toast for notifications, and react-icons for UI enhancements.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
-},
- {
-  "image": "projectimages/r6.png",
-  "category": "React",
-  "title": "Blog App",
-  "description": "Blog app built to understand React Context Hook using React and Tailwind CSS.",
-  "fullDescription": "This project was created to learn and understand the React Context Hook. It is a simple blog application that displays a list of posts and uses Context to manage and share state efficiently across components without prop drilling.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
-},
- 
- {
-  "image": "projectimages/r8.png",
-  "category": "React",
-  "title": "Basic React Project with Redux",
-  "description": "A simple React and Tailwind project demonstrating state management using Redux.",
-  "fullDescription": "This basic project uses React with Tailwind CSS and integrates Redux for global state management. It helps in understanding how to set up Redux, manage state, and connect it with React components.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
-},
- {
-  "image": "projectimages/r9.png",
-  "category": "React",
-   "title": "Ecomzy - Shopping Cart App",
-  "description": "A full-featured shopping cart app built with React, Tailwind CSS, and Redux.",
-  "fullDescription": "Ecomzy is an e-commerce shopping cart application developed using React and Tailwind CSS. It uses Redux Toolkit for efficient global state management. The app features routing, toast notifications, and dynamic cart functionality to simulate a real-world shopping experience.",
-  "liveLink": "https://example.com/react-counter",
-  "sourceCode": "https://github.com/OmKashyapODCode/React"
-},
-
-//////// mern projects
-
 {
   "image": "projectimages/IDEimage.png",
-  "category": "other",
-   "title": "CODEFLOW <br/> online code editor",
-  "description": "A powerful online code editor built with the MERN stack and Piston API.",
-"fullDescription": "This is a full-featured online code editor developed using the MERN stack. It supports user authentication, secure route protection, and real-time code execution in multiple programming languages via the Piston API. Users can create, edit, save, and manage coding projects in one place, all within a responsive and intuitive UI built with React and Tailwind CSS.",
-  "liveLink": "https://example.com/",
-  "sourceCode": "https://github.com/OmKashyapODCode/Online-code-editor"
+  "category": "Mern",
+  "title": "Online Code Editor",
+  "description": "A full-featured online code editor built using the MERN stack with multi-language support, real-time code execution, and secure user authentication.",
+  "fullDescription": "About\nA full-featured online code editor built with the MERN stack that allows users to write, run, and manage code efficiently in a single platform. It supports multi-language execution using the Piston API and includes secure authentication and protected routes.\n\nFeatures\nUser Authentication & Authorization\nMulti-language Code Execution (via Piston API)\nCreate, Edit & Manage Projects\nReal-time Code Writing Experience\nSecure Route Protection\nFull-stack MERN Architecture\n\n🛠️ Tech Stack\nFrontend: React.js\nBackend: Node.js, Express.js\nDatabase: MongoDB\nAPI: Piston API (for code execution)\nAuthentication: JWT-based auth\nArchitecture: Full-stack MERN",
+  "sourceCode": "https://github.com/OmKashyapODCode/Online-code-editor",
+  "liveLink": "https://online-code-editor-amber.vercel.app"
 },
 {
-  "image": "projectimages/chatapp.png",
-  "category": "other",
-  "title": "Ping Me – Connect Instantly, Speak Freely",
-  "description": "A real-time language exchange platform for seamless global communication.",
-  "fullDescription": "Ping Me is a real-time language exchange platform designed for seamless global communication. It enables instant messaging, group and 1-on-1 video calls, screen sharing, and emoji reactions—all with secure authentication and beautiful, customizable UI themes. Built with the MERN stack, it features a responsive UI using React and Tailwind CSS.",
-  "liveLink": "https://example.com/",
-  "sourceCode": "https://github.com/OmKashyapODCode/PingMe"
+  "image": "projectimages/meme.png",
+  "category": "React",
+  "title": "Random Meme Generator",
+  "description": "A simple and interactive web app built with React and Tailwind CSS that fetches and displays random GIFs using the Giphy API.",
+  "fullDescription": "About\nA simple and interactive web application built using React that allows users to generate and view random memes (GIFs) instantly. It integrates with the Giphy API to fetch dynamic content and provides a smooth user experience with responsive UI.\n\nFeatures\nGenerate Random Memes (GIFs)\nFetch Data from Giphy API\nOne-click Meme Refresh\nResponsive UI with Tailwind CSS\nEfficient API Handling with Async/Await\n\n🛠️ Tech Stack\nFrontend: React.js\nStyling: Tailwind CSS\nAPI: Giphy API\nArchitecture: Component-based React App",
+  "sourceCode": "https://github.com/OmKashyapODCode/random-meme",
+  "liveLink": ""
 }
-
-
-
-
 
 ];
 

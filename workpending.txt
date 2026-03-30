@@ -1,3 +1,0 @@
-animation on home page
-show a tab containing all skills for mern stack and dsa 
-in project remove all faltu projects show only relevant projects .. like full stack project and this portfolio ...

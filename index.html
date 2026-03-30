@@ -29,11 +29,15 @@
 
       <div class="header-content">
         <div class="header-text">
-          <p>mern stack developer</p>
+          <p class="header-subtitle">mern stack developer</p>
           <h1>hi, I'm <span>Om</span><br>Kashyap From India</h1>
+          <div class="cta-buttons">
+            <button class="cta-btn primary" onclick="document.getElementById('project-section').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+            <button class="cta-btn secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get In Touch</button>
+          </div>
         </div>
         <div class="header-img">
-          <img src="images/black2img.png" alt="Profile Image">
+          <img src="images/profile.png" alt="Profile Image">
         </div>
       </div>
     </div>
@@ -43,11 +47,9 @@
   <div class="container">
     <h1 class="sub-title">About Me</h1>
     <div class="about-content">
-      <div class="about-img">
-        <img src="images/user.png" alt="User Image">
-      </div>
+
       <div class="about-details">
-        <p>I'm Om, a BTech student at DTU and a passionate web developer focused on mastering full-stack development with the MERN stack, while also strengthening my skills in Data Structures and Algorithms to build impactful and efficient digital solutions.</p>
+        <p>B.Tech Computer Science student at Delhi Technological University with strong foundations in full-stack development and core computer science concepts. Focused on building secure, scalable web applications using the MERN stack, with hands-on experience in authentication systems, REST APIs, and database design. Active problem solver with 500+ DSA questions solved and strong competitive programming presence.</p>
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
           <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -55,23 +57,28 @@
         </div>
         <div class="tab-contents active-tab" id="skills">
           <ul>
-            <li><span>MERN Stack Web Developer</span><br>Builds responsive and dynamic web applications</li>
-            <li><span>Data Structures and Algorithms</span><br>Enhances the performance and efficiency of dynamic, responsive web applications</li>
-            <li><span>Programming Languages</span><br>Proficient in Java, JavaScript, and C</li>
+            <li><span>Full Stack Development</span><br>Builds scalable and secure web applications using MERN stack with JWT authentication, REST APIs, and modern UI frameworks.</li>
+            <li><span>Core Computer Science</span><br>Strong understanding of Data Structures & Algorithms, OOP, DBMS, and system design fundamentals.</li>
+            <li><span>Programming Languages</span><br>C, Java, JavaScript, Python, SQL</li>
+            <li><span>Frontend</span><br>React.js, Tailwind CSS, HTML5, CSS3</li>
+            <li><span>Backend</span><br>Node.js, Express.js, Spring Boot, REST API Design, JWT Auth</li>
+            <li><span>Databases & Tools</span><br>MongoDB, MySQL, Redis, Git, GitHub, Postman, VS Code</li>
           </ul>
         </div>
         <div class="tab-contents" id="experience">
           <ul>
-            <li><span>Web Development Projects</span><br>Developed multiple projects using the MERN stack, focusing on responsive and dynamic user interfaces</li>
-            <li><span>DSA Practice</span><br>Solved 250+ problems on platforms like LeetCode to strengthen algorithmic thinking</li>
-            <li><span>Academic Experience</span><br>Completed coursework in Operating Systems, DBMS, and Computer Networks with hands-on lab assignments</li>
+            <li><span>Full Stack Projects</span><br>Developed production-level applications with authentication, session management, and secure API design.</li>
+            <li><span>Authentication System Project</span><br>Implemented OTP-based MFA, JWT lifecycle, Redis session handling, CSRF protection, and role-based access control.</li>
+            <li><span>Banking Management System</span><br>Built a Java-based system supporting transactions, account management, and database integration using JDBC.</li>
+            <li><span>DSA & Competitive Programming</span><br>Solved 500+ problems on LeetCode and Codeforces; LeetCode rating 1807, Codeforces 1300+.</li>
+            <li><span>Leadership & Volunteering</span><br>Worked as a volunteer teacher (Dhanak NGO) and participated in community initiatives with NSSS Foundation.</li>
           </ul>
         </div>
         <div class="tab-contents" id="education">
           <ul>
-            <li><span>B.Tech in Computer Science</span><br>Delhi Technological University(CSE), 2023 – 2027 , CGPA - 7.7 (till 3rd sem)</li>
-            <li><span>Senior Secondary (Class XII)</span><br>CBSE Board, PCMB – 87%, Passed in 2022</li>
-            <li><span>Secondary (Class X)</span><br>CBSE Board – 86%, Passed in 2020</li>
+            <li><span>B.Tech in Computer Science</span><br>Delhi Technological University (2023 – 2027)<br>CGPA: 7.8</li>
+            <li><span>Class XII (CBSE)</span><br>GSBV Khajuri Khas – 86.8% (2022)</li>
+            <li><span>Class X (CBSE)</span><br>GSBV Khajuri Khas – 85.8% (2020)</li>
           </ul>
         </div>
       </div>
@@ -84,9 +91,8 @@
       <h2 class="sub-title">My Projects</h2>
       <div class="filter-buttons">
         <button class="btn active" data-filter="all">All</button>
-        <button class="btn" data-filter="JavaScript">JavaScript</button>
-        <button class="btn" data-filter="React">React</button>
-        <button class="btn" data-filter="other">Mern</button>
+        <button class="btn" data-filter="Mern">Mern</button>
+         <button class="btn" data-filter="Java">Java</button>
       </div>
       <div class="project-grid" id="project-grid"></div>
     </div>
@@ -116,7 +122,7 @@
       <button type="submit">Submit <img src="images/arrowicon.svg" alt="arrowicon"></button>
     </form>
     <div class="contact-right">
-      <img src="images/right_img.png" alt="">
+      <img src="images/contact.png" alt="Contact">
     </div>
   </div>
 <!-- ------------------------footer -------------- -->
@@ -127,7 +133,7 @@
         <a href="https://github.com/OmKashyapODCode" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         <a href="https://www.instagram.com/__kashyap.om__/" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
         <a href="https://www.linkedin.com/in/om-kashyap-997236318" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
-        <a href="https://codeforces.com/profile/omgeet8585" target="_blank"><img src="images/cf.png" alt="codeforce profile"></a>
+        <a href="https://codeforces.com/profile/OdCode20" target="_blank"><img src="images/cf.png" alt="codeforce profile"></a>
       </div>
       <div class="resume-download">
         <a href="https://drive.google.com/file/d/11eXrtOMGguJ11r3VUPqqTfwozZa1eRK7/view?usp=sharing" ><button>My Resume</button></a>
