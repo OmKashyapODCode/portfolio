@@ -2,17 +2,17 @@
 const projects = [
   
   {
-    image: "projectimages/auth.png",
-    category: "Mern",
-    "title": "Authentication System",
-    "description": "A production-grade authentication and authorization system built using MongoDB, Express, React, Node.js, Redis with secure session handling, role-based access control, and multiple authentication flows. Designed with a strong focus on security, scalability, and real-world authentication patterns.",
-    "fullDescription": "A production-grade authentication and authorization system built using MongoDB, Express, React, Node.js, Redis with secure session handling, role-based access control, and multiple authentication flows. Designed with a strong focus on security, scalability, and real-world authentication patterns.",
-    sourceCode:"https://github.com/OmKashyapODCode/Authentication",
-    liveLink: "https://authentication-odcode.onrender.com/"
-  },
+  "image": "projectimages/auth.png",
+  "category": "MERN",
+  "title": "MERN Authentication & Authorization System",
+  "description": "A production-ready authentication system built with the MERN stack and Redis, featuring secure session management, refresh token rotation, role-based access control, and modern security practices.",
+  "fullDescription": "This is a production-grade authentication and authorization system built using MongoDB, Express, React, Node.js, and Redis. It implements advanced security practices such as JWT-based authentication (access and refresh tokens), refresh token rotation, HTTP-only cookies, CSRF protection, and Redis-backed session management. The system supports email verification, OTP-based 2FA login, password reset flows, and role-based access control for user and admin routes. Designed to prevent replay attacks and token misuse, it ensures secure and scalable session handling similar to real-world production systems.",
+  "sourceCode": "https://github.com/OmKashyapODCode/Authentication",
+  "liveLink": "https://authentication-odcode.onrender.com/"
+},
   {
   "image": "projectimages/bank.png",
-  "category": "Java",
+  "category": "JAVA",
   "title": "Banking Management System (Java + JDBC)",
   "description": "A console-based Banking Management System built using Java and JDBC that performs essential banking operations with persistent storage using MySQL.",
   "fullDescription": "About\nBanking Management System is a Java-based console application using JDBC and MySQL that enables user registration, account management, balance checks, and basic banking transactions like deposits, withdrawals, and transfers, demonstrating core backend and database concepts.\n\nFeatures\nUser Registration & Login\nBank Account Creation\nView Account Balance\nDeposit Money\nWithdraw Money\nTransfer Funds Between Accounts\nSecure database interaction using JDBC\nModular and object-oriented design\n\n🛠️ Tech Stack\nLanguage: Java (JDK 8+)\nDatabase: MySQL\nConnectivity: JDBC\nIDE: IntelliJ IDEA / Eclipse / VS Code\nArchitecture: Console-based, OOP-driven",
@@ -21,7 +21,7 @@ const projects = [
 },
 {
   "image": "projectimages/IDEimage.png",
-  "category": "Mern",
+  "category": "MERN",
   "title": "Online Code Editor",
   "description": "A full-featured online code editor built using the MERN stack with multi-language support, real-time code execution, and secure user authentication.",
   "fullDescription": "About\nA full-featured online code editor built with the MERN stack that allows users to write, run, and manage code efficiently in a single platform. It supports multi-language execution using the Piston API and includes secure authentication and protected routes.\n\nFeatures\nUser Authentication & Authorization\nMulti-language Code Execution (via Piston API)\nCreate, Edit & Manage Projects\nReal-time Code Writing Experience\nSecure Route Protection\nFull-stack MERN Architecture\n\n🛠️ Tech Stack\nFrontend: React.js\nBackend: Node.js, Express.js\nDatabase: MongoDB\nAPI: Piston API (for code execution)\nAuthentication: JWT-based auth\nArchitecture: Full-stack MERN",
@@ -30,13 +30,23 @@ const projects = [
 },
 {
   "image": "projectimages/meme.png",
-  "category": "React",
+  "category": "REACT",
   "title": "Random Meme Generator",
   "description": "A simple and interactive web app built with React and Tailwind CSS that fetches and displays random GIFs using the Giphy API.",
   "fullDescription": "About\nA simple and interactive web application built using React that allows users to generate and view random memes (GIFs) instantly. It integrates with the Giphy API to fetch dynamic content and provides a smooth user experience with responsive UI.\n\nFeatures\nGenerate Random Memes (GIFs)\nFetch Data from Giphy API\nOne-click Meme Refresh\nResponsive UI with Tailwind CSS\nEfficient API Handling with Async/Await\n\n🛠️ Tech Stack\nFrontend: React.js\nStyling: Tailwind CSS\nAPI: Giphy API\nArchitecture: Component-based React App",
   "sourceCode": "https://github.com/OmKashyapODCode/random-meme",
   "liveLink": ""
+},
+{
+  "image": "projectimages/finDas.png",
+  "category": "REACT",
+  "title": "Finance Dashboard",
+  "description": "A modern and interactive finance dashboard built with React and Tailwind CSS to track income, expenses, and financial insights.",
+  "fullDescription": "About\nA modern and interactive finance dashboard built using React that helps users manage and visualize their financial data. It provides insights into income, expenses, and spending patterns through dynamic charts and a clean, responsive UI.\n\nFeatures\nDashboard Overview with balance, income, and expense summaries\nInteractive charts for cash flow and expense breakdown\nSmart insights for spending patterns and savings analysis\nAdd, delete, and manage transactions\nSearch, filter, and sort transactions\nRole-based access (Viewer/Admin)\nDark mode support with persistent settings\nResponsive UI with Tailwind CSS\nLocal storage persistence\n\n🛠️ Tech Stack\nFrontend: React.js\nStyling: Tailwind CSS\nCharts: Recharts\nArchitecture: Component-based React App with Context API",
+  "sourceCode": "https://github.com/OmKashyapODCode/Finance-Dashboard",
+  "liveLink": "https://finance-dashboard-odcode.netlify.app/"
 }
+
 
 ];
 
