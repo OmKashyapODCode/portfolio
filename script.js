@@ -2,6 +2,42 @@
 const projects = [
   
   {
+  "image": "projectimages/hospital.png",
+  "category": "MERN",
+  "title": "Hospital Queue Management System",
+  "description": "A real-time platform for hospitals to manage OPD queues — patients join queues and track live position updates while doctors and receptionists manage patient flow through role-specific dashboards.",
+  "fullDescription": "A real-time platform for hospitals to manage OPD queues — patients join queues and track live position updates while doctors and receptionists manage patient flow through role-specific dashboards.\n\nKey Highlights:\n• Designed a microservices architecture with independently deployable Auth and Queue services, each with isolated databases (PostgreSQL + Prisma), deployed across five cloud platforms (Vercel, Render, Neon, Upstash, CloudAMQP).\n• Built a role-based authorization layer supporting four roles (Admin, Doctor, Receptionist, Patient) through a single reusable middleware with doctor-queue ownership validation.\n• Implemented real-time queue state synchronization using Socket.io room-scoped broadcasts, emitting live updates (patient joined, called, completed, skipped, cancelled) to all connected clients without polling.\n• Cut email-dependent API response times by decoupling transactional email delivery via RabbitMQ with retry policies and dead-letter queues, using Brevo's HTTP API as the transport layer.\n• Hardened authentication security with JWT access/refresh token rotation, CSRF protection, and a Redis-backed rate limiter (5 attempts/email+IP/min).\n\n🛠️ Tech Stack: React.js, Node.js, Express.js, PostgreSQL, Prisma, Redis, RabbitMQ, Socket.io",
+  "sourceCode": "https://github.com/OmKashyapODCode/hospital-queue-management-showcase",
+  "liveLink": "https://hospital-queue-management-eosin.vercel.app/login"
+},
+  {
+  "image": "projectimages/pdf.png",
+  "category": "AI",
+  "title": "AI PDF Chat — RAG Platform",
+  "description": "A full-stack RAG platform that lets users upload PDFs and ask natural-language questions, generating grounded Gemini responses from document-specific semantic context with page-level citations.",
+  "fullDescription": "A full-stack Retrieval-Augmented Generation (RAG) platform that lets users upload PDFs and ask natural-language questions, generating grounded Gemini responses from document-specific semantic context with page-level citations.\n\nKey Highlights:\n• Designed an asynchronous PDF ingestion pipeline using RabbitMQ and a dedicated background worker to parse documents, split text into overlapping chunks, generate embeddings, and store vectors in Qdrant.\n• Implemented semantic retrieval by embedding user queries with Gemini and performing Qdrant nearest-neighbor search with document-level metadata filtering, ensuring responses are grounded only in the selected PDF.\n• Added structured document metadata including document ID, filename, page number, and unique chunk ID to enable precise source attribution and page-level citations.\n• Optimized vector ingestion using batched embedding and insertion of 50 chunks per batch, with RabbitMQ prefetching to process PDF jobs sequentially.\n• Integrated Cloudinary for cloud-based PDF storage and Clerk for authentication, with a responsive Next.js chat interface supporting Markdown-rendered AI responses.\n\n🛠️ Tech Stack: Next.js, React, Node.js, Express.js, LangChain, Google Gemini, Qdrant, RabbitMQ, Cloudinary, Clerk",
+  "sourceCode": "https://github.com/OmKashyapODCode/Chat_with_PDF-",
+  "liveLink": "https://chat-with-pdf-delta-cyan.vercel.app/"
+},
+  {
+  "image": "projectimages/skin.png",
+  "category": "AI",
+  "title": "AI Skin Analyzer",
+  "description": "A full-stack AI-powered healthcare app that lets users upload skin images or take live webcam captures to classify skin conditions, estimate skin tone and hydration levels, and receive personalized wellness reports as PDFs.",
+  "fullDescription": "AI Skin Analyzer is a full-stack AI-powered healthcare application — a three-tier medical wellness platform that allows users to take live webcam captures or upload photos of their skin, run quality validation, classify skin conditions (such as Acne, Eczema, Rosacea), estimate skin tone and hydration levels, and receive dynamically generated daily routines and wellness reports exportable as PDFs.\n\nKey Highlights:\n• Skin disease prediction with confidence score analysis using TensorFlow deep learning models.\n• Skin tone and hydration assessment for personalized wellness recommendations.\n• Downloadable PDF wellness reports with scan history management.\n• Three-tier architecture: React frontend, Node.js server, and Python AI service with TensorFlow.\n• Live webcam capture and image upload with quality validation.\n\n🛠️ Tech Stack: React, Node.js, Python, TensorFlow, Vercel",
+  "sourceCode": "https://github.com/OmKashyapODCode/AI-skin-analyzer",
+  "liveLink": "https://ai-skin-analyzer-eight.vercel.app"
+},
+  {
+  "image": "projectimages/pingme.png",
+  "category": "MERN",
+  "title": "PingMe — Language Exchange Chat App",
+  "description": "A full-stack real-time language exchange platform for seamless global communication with instant messaging, group and 1-on-1 video calls, screen sharing, and emoji reactions.",
+  "fullDescription": "PingMe – Connect Instantly, Speak Freely. A real-time language exchange platform designed for seamless global communication. Ping Me enables instant messaging, group and 1-on-1 video calls, screen sharing, and emoji reactions — all with secure authentication and beautiful, customizable UI themes.\n\nKey Highlights:\n• JWT Authentication with Signup, Login, and Logout flows.\n• User Onboarding with language, bio, and location setup.\n• Friend Request System for connecting with native speakers.\n• Real-time Chat powered by Stream.io for instant messaging.\n• Group and 1-on-1 video calls with screen sharing support.\n• Emoji reactions and customizable UI themes.\n• Secure authentication with beautiful, responsive design.\n\n🛠️ Tech Stack: React, Node.js, Express.js, MongoDB, Stream.io, Vercel",
+  "sourceCode": "https://github.com/OmKashyapODCode/PingMe",
+  "liveLink": "https://ping-me-gold.vercel.app"
+},
+  {
   "image": "projectimages/auth.png",
   "category": "MERN",
   "title": "MERN Authentication & Authorization System",
@@ -70,7 +106,14 @@ function renderProjects(filter = 'all') {
       card.className = 'project-card';
       card.setAttribute('data-category', project.category);
       card.innerHTML = `
-        <img src="${project.image}" alt="${project.title}">
+        <div class="card-image-wrapper">
+          <img src="${project.image}" alt="${project.title}">
+          <span class="card-badge">${project.category}</span>
+          <div class="card-overlay">
+            ${project.liveLink ? `<a href="${project.liveLink}" target="_blank" class="overlay-btn" onclick="event.stopPropagation()" title="Live Demo">&#9654;</a>` : ''}
+            <a href="${project.sourceCode}" target="_blank" class="overlay-btn" onclick="event.stopPropagation()" title="Source Code">&#60;/&#62;</a>
+          </div>
+        </div>
         <div class="info">
           <h3>${project.title}</h3>
           <p>${project.description}</p>
@@ -89,8 +132,13 @@ function openModal(project) {
   modalTitle.textContent = project.title;
   modalDescription.textContent = project.description;
   modalDetails.textContent = project.fullDescription;
-  liveLink.href = project.liveLink;
+  liveLink.href = project.liveLink || '#';
   sourceLink.href = project.sourceCode;
+  if (!project.liveLink) {
+    liveLink.style.display = 'none';
+  } else {
+    liveLink.style.display = 'inline-block';
+  }
 }
 closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
@@ -111,21 +159,7 @@ document.querySelectorAll('.filter-buttons .btn').forEach(btn => {
 // Initial render
 renderProjects();
 
-// Tab functionality
-function opentab( tabname) {
-  let tablinks = document.getElementsByClassName("tab-links");
-  let tabcontents = document.getElementsByClassName("tab-contents");
 
-  for (let tablink of tablinks) {
-    tablink.classList.remove("active-link");
-  }
-  for (let tabcontent of tabcontents) {
-    tabcontent.classList.remove("active-tab");
-  }
-
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
-}
 
 // Navigation menu functionality
 
